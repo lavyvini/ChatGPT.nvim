@@ -204,11 +204,11 @@ M.edit_with_instructions = function(output_lines, bufnr, selection, ...)
     },
     Layout.Box({
       Layout.Box({
-        Layout.Box(input_window, { grow = 1 }),
-        Layout.Box(instructions_input, { size = 3 }),
-      }, { dir = "col", size = "50%" }),
-      Layout.Box(output_window, { size = "50%" }),
-    }, { dir = "row" })
+        Layout.Box(input_window, { size = "50%" }),
+        Layout.Box(output_window, { size = "50%" }),
+      }, { dir = "row", size = "90%" }),
+        Layout.Box(instructions_input, { size = "10%" }),
+    }, { dir = "col" })
   )
 
   -- accept output window
